@@ -1,0 +1,149 @@
+/* Reset default styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* Set base font and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+/* Header styles */
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+}
+header nav {
+    text-align: center;
+}
+header nav ul {
+    list-style: none;
+    display: inline-block;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+/* Hero section styles */
+#hero {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+#hero img {
+    max-width: 100%;
+}
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#hero .cta {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+/* About section styles */
+#about {
+    padding: 50px;
+}
+#about h3 {
+    margin-top: 50px;
+}
+/* Products section styles */
+#products {
+    padding: 50px;
+}
+#products h3 {
+    margin-top: 50px;
+}
+#products ul {
+    list-style: none;
+}
+#products ul li {
+    margin-bottom: 50px;
+}
+#products ul li img {
+    max-width: 100%;
+    float: left;
+    margin-right: 20px;
+}
+#products ul li .cta {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+/* Testimonials section styles */
+#testimonials {
+    padding: 50px;
+}
+#testimonials h3 {
+    margin-top: 50px;
+}
+#testimonials ul {
+    list-style: none;
+}
+#testimonials ul li {
+    margin-bottom: 50px;
+}
+/* Contact section styles */
+#contact {
+    padding: 50px;
+}
+#contact h3 {
+    margin-top: 50px;
+}
+#contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+#contact form input[type="text"], #contact form input[type="email"], #contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+    #contact form input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    #contact p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    #contact p a {
+        color: #333;
+        text-decoration: none;
+    }
+    /* Footer styles */
+    footer {
+        background-color: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+    }
+    

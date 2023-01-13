@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mushroom Haven</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mushroom Haven</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="hero">
+    <div id="slider">
+
+    </div>
+
+    <h2>Discover the health benefits of mushrooms</h2>
+    <a href="#products" class="cta">Shop now</a>
+  </section>
+  
+  <section id="about">
+    <h3>About Us</h3>
+    <p>At Mushroom Haven, we specialize in growing premium oyster mushrooms that are packed with nutrition and flavor. Our mushrooms are grown using sustainable methods, ensuring that you not only nourish your body but also contribute to the environment.</p>
+  </section>
+  
+  <section id="products">
+    <h3>Our Products</h3>
+    <ul>
+      <li>
+        <h4>Oyster Mushrooms</h4>
+        <img src="oyster-mushrooms.jpg" alt="Oyster mushrooms">
+        <p>Our premium oyster mushrooms are packed with protein, fiber, and essential vitamins and minerals. They have a delicate, slightly sweet flavor and tender texture that make them a gourmet's dream. <a href="#">Learn more</a></p>
+        <a href="#" class="cta">Add to Cart</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section id="testimonials">
+    <h3>What our customers are saying</h3>
+    <ul>
+      <li>
+        <p>"I have been using Mushroom Haven's oyster mushrooms in my cooking and have noticed a significant improvement in my overall health. I highly recommend them!"</p>
+        <p>- Jane Doe</p>
+      </li>
+      <li>
+        <p>"The oyster mushrooms from Mushroom Haven are the best I've ever had. The flavor is out of this world and I love that they're grown sustainably."</p>
+        <p>- John Smith</p>
+      </li>
+    </ul>
+  </section>
+  
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <form action="submit-form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <p>You can also reach us at <a href="tel:555-555-5555">555-555-5555</a> or <a href="mailto:info@mushroomhaven.com">info@mushroomhaven.com</a></p>
+  </section>
+  
+  <footer>
+    <p>Copyright ©2022 Mushroom Haven</p>
+  </footer>
+
+  <script>
+    // Get the slider container
+var slider = document.getElementById("slider");
+
+// Set the images
+var images = [
+    "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/05/oyster-mushroom-1296x728-header.jpg?w=1155&h=1528",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqcVhR554k6Qo_WYWikc_EV43YXEwTDjBsjHB9FNoxfcKqWAxKB9LTe0rzzadfI7gRdac&usqp=CAU",
+    "https://gray-woio-prod.cdn.arcpublishing.com/resizer/NkymhL4ObknBugatTS7ghaquk2M=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/E6FE3JFOIZEJXDCWB7SJKZSJUI.jpg"
+];
+
+// Create an image element
+var img = document.createElement("img");
+
+// Set the first image
+img.src = images[0];
+img.style.width = "600px";
+img.style.height = "400px";
+
+// Add the image to the slider container
+slider.appendChild(img);
+
+// Set the current image index
+var currentImage = 0;
+
+// Function to change the image
+function changeImage() {
+    // Update the current image index
+    currentImage++;
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+    // Update the image source
+    img.src = images[currentImage];
+    img.style.width = "600px";
+    img.style.height = "400px";
+}
+
+// Run the changeImage function every 3 seconds
+setInterval(changeImage, 3000);
+
+  </script>
+</body>
+</html>
+
+     
